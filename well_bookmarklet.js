@@ -1,3 +1,4 @@
+console.log("V2")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
     script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
