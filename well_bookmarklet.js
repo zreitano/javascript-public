@@ -1,4 +1,4 @@
-console.log("V7")
+console.log("V8")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
     script.src    = 'https://code.jquery.com/jquery-3.1.0.min.js';
@@ -20,7 +20,6 @@ function sendData() {
       data: data,
       success: function() { 
       	console.log("Article Submitted"); 
-      	alert("Article Added To The Well")
       	var notification = document.createElement("div")
       	notification.style.position = 'absolute'
       	notification.style.top = "0px"
