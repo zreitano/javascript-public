@@ -1,7 +1,7 @@
 console.log("V5")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
-    script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+    script.src    = 'https://code.jquery.com/jquery-3.1.0.min.js';
     script.onload = function() { sendData; }
     document.body.appendChild(script);
 }
@@ -10,7 +10,7 @@ else {
 }
 
 function sendData() {
-   var url   = "http://well.prehype.com/api_v1/articles.json";
+   var url   = "http://localhost:3000/api_v1/articles.json";
    data = {}
    data.topic = {value: 1}
    data.url = location.href
@@ -21,4 +21,4 @@ function sendData() {
       success: function() { alert("Article Submitted"); },
       error: function() { alert("WHOOPS");}
    });
-} 
+}
