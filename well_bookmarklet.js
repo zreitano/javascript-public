@@ -1,4 +1,4 @@
-console.log("V3")
+console.log("V4")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
     script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
@@ -14,9 +14,7 @@ function sendData() {
    $.ajax({
       type: "GET",
       url: url,
-      // data: $data,
-      //send again in 5 minutes
-      // success: function() { setTimeout(sendData, 5 * 60 * 1000); }
+      dataType: 'jsonp',
       success: function() { alert("Article Submitted"); },
       error: function() { alert("WHOOPS");}
    });
