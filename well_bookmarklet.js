@@ -10,7 +10,7 @@ else {
 }
 
 function sendData() {
-   var url   = "//localhost:3000/api_v1/articles.json";
+   var url   = "//well.prehype.com/api_v1/articles.json";
    data = {}
    data.topic = {value: 1}
    data.url = location.href
