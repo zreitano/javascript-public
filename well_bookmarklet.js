@@ -9,7 +9,7 @@ else {
 }
 
 function sendData() {
-   var url   = "http://well.prehype.com/good-reads?url="+encodeURIComponent(location.href), 
+   var url   = "http://well.prehype.com/good-reads?url="+encodeURIComponent(location.href);
    $.ajax({
       type: "GET",
       url: url,
