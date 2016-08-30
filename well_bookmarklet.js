@@ -31,7 +31,3 @@ function sendData() {
       error: function() { alert("Something went wrong. Ping Z please.");}
    });
 }
-
-
-
-}
