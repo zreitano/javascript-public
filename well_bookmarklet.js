@@ -20,13 +20,18 @@ function sendData() {
       data: data,
       success: function() { 
       	console.log("Article Submitted"); 
-		var body = document.getElementsByTagName('body');
-		 document.body.innerHTML +='<div id="prehype-notification" style="position:absolute;width:100%;height:50px;opacity:1;z-index:100;background:#1C8C53; line-height: 50px; text-align: center; color: white; font-size: 22px;">Article Added</div>'
-		 setTimeout(function(){ 
-		 	var notification = document.getElementById('prehype-notification')
-		 	notification.style.display = "none"
-		 }, 3000);
+      	alert("Article Added")
+		// var body = document.getElementsByTagName('body');
+		//  document.body.innerHTML +='<div id="prehype-notification" style="position:absolute;width:100%;height:50px;opacity:1;z-index:100;background:#1C8C53; line-height: 50px; text-align: center; color: white; font-size: 22px;">Article Added</div>'
+		//  setTimeout(function(){ 
+		//  	var notification = document.getElementById('prehype-notification')
+		//  	notification.style.display = "none"
+		//  }, 3000);
       },
       error: function() { alert("Something went wrong. Ping Z please.");}
    });
+}
+
+
+
 }
