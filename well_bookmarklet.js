@@ -1,4 +1,4 @@
-console.log("V4")
+console.log("V5")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
     script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
@@ -10,11 +10,14 @@ else {
 }
 
 function sendData() {
-   var url   = "http://well.prehype.com/good-reads?url="+encodeURIComponent(location.href);
+   var url   = "http://localhost:3000/api_v1/articles.json";
+   data = {}
+   data.topic = {value: 1}
+   data.url = location.href
    $.ajax({
-      type: "GET",
+      type: "POST",
       url: url,
-      dataType: 'jsonp',
+      data: data,
       success: function() { alert("Article Submitted"); },
       error: function() { alert("WHOOPS");}
    });
