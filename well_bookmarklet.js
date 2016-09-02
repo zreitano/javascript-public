@@ -1,7 +1,7 @@
 console.log("V8")
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
-    script.src    = 'https://code.jquery.com/jquery-3.1.0.min.js';
+    script.src    = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js";
     script.onload = function() { sendData; }
     document.body.appendChild(script);
 }
