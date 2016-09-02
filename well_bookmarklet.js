@@ -14,7 +14,7 @@ function sendData() {
    data = {}
    data.topic = {value: 1}
    data.url = location.href
-   $.ajax({
+   jQuery.ajax({
       type: "POST",
       url: url,
       data: data,
